@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>To-Do List</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+   
+  <header>Todo List </header>
+  <main>
+  <div class="app-wrapper">
+    <div class="addAndFilter container">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-md-5">
+          <input id="taskInput" type="text" class="form-control" placeholder="Add What You Need To do">
+        </div>
+        <div class="col-md-5">
+          <select class="form-select" id ="mySelect" aria-label="Default select example">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted" id="completed">Uncompleted</option>
+          </select>
+       
+        </div>
+        <input type="search" class="form-control" placeholder="Search By Task Name" id="searchInput">
+        <button  onclick="addTask()"  id="todo-button" class="btn btn-success w-50 mt-4" >Add Todo</button>
+        
+        
+      </div>
+     
+    </div>
+    
+    <div class="todos-wrapper container mt-5">
+      <div class="row  gy-4 justify-content-center" id="todos-container">
+        <div class="col-11 todo completed ">
+          <!-- <div class="row bg-dark">
+            <div class="col-8  py-3 fs-5">TheNote Is Here</div>
+            <div class="col-2  py-3 bg-success d-flex justify-content-center"><i class="fa-solid fa-check fs-3  d-flex align-items-center"></i></div>
+            <div class="col-2  py-3 bg-danger d-flex justify-content-center"><i class="fa-solid fa-trash fs-3  d-flex align-items-center"></i></div>
+          </div> -->
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+</main>
+  <div class="notification-container" id="notification-container"></div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
